@@ -14,7 +14,7 @@ fg = '#cad4ae'
 bg = '#1f1e1c'
 
 alt_fg = '#dbe5be'
-alt_bg = '#111110'
+alt_bg = '#191816'
 
 cursor_fg = '#1f1e1c'
 cursor_bg = '#cad4ae'
