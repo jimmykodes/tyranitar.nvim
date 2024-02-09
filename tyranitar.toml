@@ -62,9 +62,9 @@ success_green = '#939d76'
 folder_blue = '#90b8d8'
 
 
-ui_green = '#b0bd91' # 176 189 145
+ui_green = '#777f63' # 176 189 145
 ui2_green = '#939c76' # 147 156 118
-ui3_green = '#777f63' # 119 127 99
+ui3_green = '#b0bd91' # 119 127 99
 ui4_green = '#c9d2ad' # 201 210 173
 ui5_green = '#909974' # 144 153 116
 ui_yellow = '#cec285' # 206 194 133
