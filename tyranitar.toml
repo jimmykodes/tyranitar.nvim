@@ -1,0 +1,682 @@
+[information]
+name = "tyranitar"
+background = "dark"
+author = 'Jimmy Keith <james.keith.92@gmail.com>'
+
+[palette]
+# TODO: change?
+line = '#3e3e3e'
+context = '#606060'
+menu_bg = '#202123'
+vivid_blue = '#7c9ebb'
+
+fg = '#cad4ae'
+bg = '#1f1e1c'
+
+alt_fg = '#cad4ae'
+alt_bg = '#1f1e1c'
+
+cursor_fg = '#1f1e1c'
+cursor_bg = '#cad4ae'
+
+dark_gray = '#8a91a9'
+gray = '#c3cadc'
+light_gray = '#cccccc'
+
+red = '#a53949'
+light_red = '#bc7871'
+
+blue = '#7c9ebb'
+light_blue = '#90b8d8'
+
+green = '#939d76'
+light_green = '#ccd5af'
+
+cyan = '#7abc3b'
+
+rock_brown = '#b4a14b'
+ground_brown = '#dbc175'
+
+purple = '#615adf'
+magenta = '#935dde'
+
+sign_add = '#939d76'
+sign_change = '#7c9ebb'
+sign_delete = '#bc7871'
+
+sign_add_alt = '#ccd5af'
+sign_change_alt = '#90b8d8'
+
+error = '#a53949'
+warn = '#dbc175'
+info = '#939d76'
+hint = '#7abc3b'
+
+error_bg = '#1f1e1c'
+warn_bg = '#1f1e1c'
+info_bg = '#1f1e1c'
+hint_bg = '#1f1e1c'
+
+reference = '#615adf'
+success_green = '#939d76'
+folder_blue = '#90b8d8'
+
+
+ui_green = '#b0bd91' # 176 189 145
+ui2_green = '#939c76' # 147 156 118
+ui3_green = '#777f63' # 119 127 99
+ui4_green = '#c9d2ad' # 201 210 173
+ui5_green = '#909974' # 144 153 116
+ui_yellow = '#cec285' # 206 194 133
+ui2_yellow = '#b4a14b' # 180 161 75
+ui_purple = '#615adf' 
+
+[Editor]
+Normal = 'fg bg'
+SignColumn = '- bg'
+MsgArea = 'fg bg'
+ModeMsg = 'fg alt_bg'
+MsgSeparator = 'fg bg'
+SpellBad = '- - c red'
+SpellCap = '- - c ground_brown'
+SpellLocal = '- - u green'
+SpellRare = '- - u purple'
+NormalNC = 'fg bg'
+Pmenu = 'light_gray menu_bg'
+PmenuSel = '- ui2_green'
+WildMenu = 'fg ui2_green'
+CursorLineNr = 'light_gray'
+Folded = 'gray alt_bg'
+FoldColumn = 'gray alt_bg'
+LineNr = 'gray -'
+FloatBoder = 'gray alt_bg'
+Whitespace = 'dark_gray'
+VertSplit = 'gray bg'
+CursorLine = '- alt_bg'
+CursorColumn = '- alt_bg'
+ColorColumn = '- alt_bg'
+NormalFloat = '- alt_bg'
+Visual = '- ui_green'
+VisualNOS = '- alt_bg'
+WarningMsg = 'error bg'
+DiffText = 'alt_bg sign_delete'
+DiffAdd = 'alt_bg sign_add'
+DiffChange = 'alt_bg sign_change u'
+DiffDelete = 'alt_bg sign_delete'
+QuickFixLine = '- ui2_green'
+PmenuSbar = '- alt_bg'
+PmenuThumb = '- gray'
+MatchWord = '- reference'
+MatchParen = 'hint reference'
+MatchWordCur = '- reference'
+MatchParenCur = '- reference'
+Cursor = 'cursor_fg cursor_bg'
+lCursor = 'cursor_fg cursor_bg'
+CursorIM = 'cursor_fg cursor_bg'
+TermCursor = 'cursor_fg cursor_bg'
+TermCursorNC = 'cursor_fg cursor_bg'
+Conceal = 'gray'
+Directory = 'folder_blue'
+SpecialKey = 'blue - b'
+ErrorMsg = 'error bg b'
+Search = '- ui5_green'
+IncSearch = '- ui2_yellow'
+Substitute = '- ui2_yellow'
+MoreMsg = 'rock_brown'
+Question = 'rock_brown'
+EndOfBuffer = 'bg'
+NonText = 'dark_gray'
+TabLine = 'light_gray line'
+TabLineSel = 'fg line'
+TabLineFill = 'line line'
+
+[Code]
+Comment = 'context'
+Variable = 'light_blue'
+String = 'rock_brown'
+Character = 'rock_brown'
+Number = 'light_green'
+Float = 'light_green'
+Boolean = 'blue'
+Constant = 'vivid_blue'
+Type = 'cyan'
+Function = 'ground_brown'
+Keyword = 'blue'
+Conditional = 'purple'
+Repeat = 'purple'
+Operator = 'fg'
+PreProc = 'purple'
+Include = 'purple'
+Exception = 'purple'
+StorageClass = 'cyan'
+Structure = 'cyan'
+Typedef = 'purple'
+Define = 'purple'
+Macro = 'blue'
+Debug = 'red'
+Title = 'blue - b'
+Label = 'blue'
+SpecialChar = 'rock_brown'
+Delimiter = 'fg'
+SpecialComment = 'fg'
+Tag = 'blue'
+Bold = '- - b'
+Italic = '- - i'
+Underlined = '- - u'
+Ignore = 'magenta - b'
+Todo = 'magenta - b'
+Error = 'error - b'
+Statement = 'purple'
+Identifier = 'fg'
+PreCondit = 'purple'
+Special = 'rock_brown'
+
+[Treesitter]
+TSComment = 'green - i'
+TSVariable = 'link:Variable'
+TSString = 'link:String'
+TSStringRegex = 'link:String'
+TSStringEscape = 'link:String'
+TSCharacter = 'link:String'
+TSCharacterSpecial = 'link:SpecialChar'
+TSNumber = 'link:Number'
+TSFloat = 'link:Float'
+TSBoolean = 'link:Boolean'
+TSConstant = 'link:Constant'
+TSConstBuiltin = 'link:Constant'
+TSConstructor = 'link:Type'
+TSType = 'link:Type'
+TSInclude = 'link:Include'
+TSException = 'link:Exception'
+TSKeyword = 'link:Keyword'
+TSKeywordReturn = 'link:Include'
+TSKeywordOperator = 'link:Include'
+TSKeywordFunction = 'link:Keyword'
+TSFunction = 'link:Function'
+TSFuncBuiltin = 'link:Type'
+TSMethod = 'link:Function'
+TSFuncMacro = 'link:Function'
+TSConditional = 'link:Conditional'
+TSRepeat = 'link:Repeat'
+TSOperator = 'link:Operator'
+TSPreProc = 'link:PreProc'
+TSStorageClass = 'link:StorageClass'
+TSStructure = 'link:Structure'
+TSTypeDefinition = 'link:Typedef'
+TSDefine = 'link:Define'
+TSNote = 'link:Comment'
+TSTodo = 'link:Todo'
+TSDebug = 'link:Debug'
+TSDanger = 'link:Error'
+TSTitle = 'link:Title'
+TSLabel = 'link:Label'
+TSPunctDelimiter = 'link:Delimiter'
+TSTagDelimiter = 'gray'
+TSPunctBracket = 'link:Delimiter'
+TSPunctSpecial = 'link:Delimiter'
+TSTag = 'link:Tag'
+TSStrong = 'link:Bold'
+TSEmphasis = 'link:Italic'
+TSUnderline = 'link:Underline'
+TSStrike = '- - s'
+TSStringSpecial = 'fg'
+TSEnvironmentName = 'cyan'
+TSVariableBuiltin = 'cyan'
+TSConstMacro = 'vivid_blue'
+TSTypeBuiltin = 'cyan'
+TSAnnotation = 'blue'
+TSNamespace = 'cyan'
+TSSymbol = 'fg'
+TSField = 'link:Variable'
+TSProperty = 'light_blue'
+TSParameter = 'light_blue'
+TSParameterReference = 'light_blue'
+TSAttribute = 'cyan'
+TSText = 'fg'
+TSTagAttribute = 'light_blue - i'
+TSError = 'error'
+TSWarning = 'warn'
+TSQueryLinterError = 'error'
+TSURI = 'cyan - u'
+TSMath = 'ground_brown'
+TSLiteral = 'rock_brown'
+
+[markdown]
+markdownBlockquote = 'rock_brown'
+markdownCode = 'rock_brown'
+markdownCodeBlock = 'rock_brown'
+markdownCodeDelimiter = 'rock_brown'
+markdownH1 = 'link:Title'
+markdownH2 = 'link:Title'
+markdownH3 = 'link:Title'
+markdownH4 = 'link:Title'
+markdownH5 = 'link:Title'
+markdownH6 = 'link:Title'
+markdownHeadingDelimiter = 'blue'
+markdownHeadingRule = 'fg - b'
+markdownId = 'link:Identifier'
+markdownIdDeclaration = 'blue'
+markdownIdDelimiter = 'light_gray'
+markdownLinkDelimiter = 'light_gray'
+markdownBold = 'blue - b'
+markdownItalic = 'link:Italic'
+markdownBoldItalic = 'ground_brown - bi'
+markdownListMarker = 'blue'
+markdownOrderedListMarker = 'purple'
+markdownRule = 'gray'
+markdownUrl = 'cyan - t'
+markdownLinkText = 'blue'
+markdownFootnote = 'rock_brown'
+markdownFootnoteDefinition = 'rock_brown'
+markdownEscape = 'ground_brown'
+
+[Whichkey]
+WhichKey = 'purple'
+WhichKeySeperator = 'green'
+WhichKeyGroup = 'blue'
+WhichKeyDesc = 'fg'
+WhichKeyFloat = '- alt_bg'
+
+[Git]
+SignAdd = 'sign_add'
+SignChange = 'sign_change'
+SignDelete = 'sign_delete'
+GitSignsAdd = 'sign_add'
+GitSignsChange = 'sign_change'
+GitSignsDelete = 'sign_delete'
+
+[LSP]
+DiagnosticHint = 'hint'
+DiagnosticInfo = 'info'
+DiagnosticWarn = 'warn'
+DiagnosticError = 'error'
+DiagnosticOther = 'ui_purple'
+DiagnosticSignHint = 'link:DiagnosticHint'
+DiagnosticSignInfo = 'link:DiagnosticInfo'
+DiagnosticSignWarn = 'link:DiagnosticWarn'
+DiagnosticSignError = 'link:DiagnosticError'
+DiagnosticSignOther = 'link:DiagnosticOther'
+DiagnosticSignWarning = 'link:DiagnosticWarn'
+DiagnosticFloatingHint = 'link:DiagnosticHint'
+DiagnosticFloatingInfo = 'link:DiagnosticInfo'
+DiagnosticFloatingWarn = 'link:DiagnosticWarn'
+DiagnosticFloatingError = 'link:DiagnosticError'
+DiagnosticUnderlineHint = '- - c hint'
+DiagnosticUnderlineInfo = '- - c info'
+DiagnosticUnderlineWarn = '- - c warn'
+DiagnosticUnderlineError = '- - c error'
+DiagnosticSignInformation = 'link:DiagnosticInfo'
+DiagnosticVirtualTextHint = 'hint hint_bg'
+DiagnosticVirtualTextInfo = 'info info_bg'
+DiagnosticVirtualTextWarn = 'warn warn_bg'
+DiagnosticVirtualTextError = 'error error_bg'
+
+LspDiagnosticsError = 'error'
+LspDiagnosticsWarning = 'warn'
+LspDiagnosticsInfo = 'info'
+LspDiagnosticsInformation = 'link:LspDiagnosticsInfo'
+LspDiagnosticsHint = 'hint'
+LspDiagnosticsDefaultError = 'link:LspDiagnosticsError'
+LspDiagnosticsDefaultWarning = 'link:LspDiagnosticsWarning'
+LspDiagnosticsDefaultInformation = 'link:LspDiagnosticsInfo'
+LspDiagnosticsDefaultInfo = 'link:LspDiagnosticsInfo'
+LspDiagnosticsDefaultHint = 'link:LspDiagnosticsHint'
+LspDiagnosticsVirtualTextError = 'link:DiagnosticVirtualTextError'
+LspDiagnosticsVirtualTextWarning = 'link:DiagnosticVirtualTextWarn'
+LspDiagnosticsVirtualTextInformation = 'link:DiagnosticVirtualTextInfo'
+LspDiagnosticsVirtualTextInfo = 'link:DiagnosticVirtualTextInfo'
+LspDiagnosticsVirtualTextHint = 'link:DiagnosticVirtualTextHint'
+LspDiagnosticsFloatingError = 'link:LspDiagnosticsError'
+LspDiagnosticsFloatingWarning = 'link:LspDiagnosticsWarning'
+LspDiagnosticsFloatingInformation = 'link:LspDiagnosticsInfo'
+LspDiagnosticsFloatingInfo = 'link:LspDiagnosticsInfo'
+LspDiagnosticsFloatingHint = 'link:LspDiagnosticsHint'
+LspDiagnosticsSignError = 'link:LspDiagnosticsError'
+LspDiagnosticsSignWarning = 'link:LspDiagnosticsWarning'
+LspDiagnosticsSignInformation = 'link:LspDiagnosticsInfo'
+LspDiagnosticsSignInfo = 'link:LspDiagnosticsInfo'
+LspDiagnosticsSignHint = 'link:LspDiagnosticsHint'
+
+NvimTreeLspDiagnosticsError = 'link:LspDiagnosticsError'
+NvimTreeLspDiagnosticsWarning = 'link:LspDiagnosticsWarning'
+NvimTreeLspDiagnosticsInformation = 'link:LspDiagnosticsInfo'
+NvimTreeLspDiagnosticsInfo = 'link:LspDiagnosticsInfo'
+NvimTreeLspDiagnosticsHint = 'link:LspDiagnosticsHint'
+
+LspDiagnosticsUnderlineError = 'link:DiagnosticUnderlineError'
+LspDiagnosticsUnderlineWarning = 'link:DiagnosticUnderlineWarn'
+LspDiagnosticsUnderlineInformation = 'link:DiagnosticUnderlineInfo'
+LspDiagnosticsUnderlineInfo = 'link:DiagnosticUnderlineInfo'
+LspDiagnosticsUnderlineHint = 'link:DiagnosticUnderlineHint'
+
+LspReferenceRead = '- reference'
+LspReferenceText = '- reference'
+LspReferenceWrite = '- reference'
+
+IlluminatedWordRead = 'link:LspReferenceRead'
+IlluminatedWordText = 'link:LspReferenceText'
+IlluminatedWordWrite = 'link:LspReferenceWrite'
+
+LspCodeLens = 'context - i'
+LspCodeLensSeparator = 'context - i'
+
+[Quickscope]
+QuickScopePrimary = '#ff007c - u'
+QuickScopeSecondary = '#00dfff - u'
+
+[Telescope]
+TelescopeSelection = '- ui2_green'
+TelescopeSelectionCaret = 'red ui2_green'
+TelescopeMatching = 'info - bi'
+TelescopeBorder = 'alt_fg'
+TelescopeNormal = 'fg menu_bg'
+TelescopePromptPrefix = "hint"
+TelescopePromptTitle = "ui_yellow - b"
+TelescopeResultsTitle = "ui_yellow - b"
+TelescopePreviewTitle = "ui_yellow - b"
+TelescopePromptCounter = "red"
+TelescopePreviewHyphen = "red"
+
+[NvimTree]
+NvimTreeFolderIcon = 'link:Directory'
+NvimTreeIndentMarker = 'context'
+NvimTreeNormal = 'fg alt_bg'
+NvimTreeVertSplit = 'alt_bg alt_bg'
+NvimTreeFolderName = 'link:Directory'
+NvimTreeOpenedFolderName = 'folder_blue - bi'
+NvimTreeEmptyFolderName = 'gray - i'
+NvimTreeGitIgnored = 'gray - i'
+NvimTreeImageFile = 'light_gray'
+NvimTreeSpecialFile = 'rock_brown'
+NvimTreeEndOfBuffer = 'alt_bg'
+NvimTreeCursorLine = '- line'
+NvimTreeGitStaged = 'sign_add_alt'
+NvimTreeGitNew = 'sign_add_alt'
+NvimTreeGitRenamed = 'sign_add_alt'
+NvimTreeGitDeleted = 'sign_delete'
+NvimTreeGitMerge = 'sign_change_alt'
+NvimTreeGitDirty = 'sign_change_alt'
+NvimTreeSymlink = 'cyan'
+NvimTreeRootFolder = 'fg - b'
+NvimTreeExecFile = '#9FBA89'
+
+[Lir]
+LirFloatNormal = 'fg alt_bg'
+LirDir = 'link:Directory'
+LirSymLink = 'cyan'
+LirEmptyDirText = 'gray - i'
+
+[Buffer]
+BufferCurrent = 'fg bg'
+BufferCurrentIndex = 'fg bg'
+BufferCurrentMod = 'info bg'
+BufferCurrentSign = 'hint bg'
+BufferCurrentTarget = 'red bg b'
+
+BufferVisible = 'fg bg'
+BufferVisibleIndex = 'fg bg'
+BufferVisibleMod = 'info bg'
+BufferVisibleSign = 'gray bg'
+BufferVisibleTarget = 'red bg b'
+
+BufferInactive = 'gray alt_bg'
+BufferInactiveIndex = 'gray alt_bg'
+BufferInactiveMod = 'info alt_bg'
+BufferInactiveSign = 'gray alt_bg'
+BufferInactiveTarget = 'red alt_bg b'
+
+[StatusLine]
+StatusLine = 'context bg'
+StatusLineNC = 'line bg'
+StatusLineSeparator = 'line'
+StatusLineTerm = 'line'
+StatusLineTermNC = 'line'
+
+[IndentBlankline]
+IndentBlanklineContextChar = 'context'
+IndentBlanklineContextStart = '- - u'
+IndentBlanklineChar = 'dark_gray'
+# IndentBlanklineSpaceCharBlankline = 'info'
+# IndentBlanklineSpaceChar = 'cyan_test'
+
+[Dashboard]
+DashboardHeader = 'blue'
+DashboardCenter = 'purple'
+DashboardFooter = 'cyan'
+
+[DiffView]
+DiffViewNormal = 'gray alt_bg'
+DiffviewStatusAdded = 'sign_add'
+DiffviewStatusModified = 'sign_change'
+DiffviewStatusRenamed = 'sign_change'
+DiffviewStatusDeleted = 'sign_delete'
+DiffviewFilePanelInsertion = 'sign_add'
+DiffviewFilePanelDeletion = 'sign_delete'
+DiffviewVertSplit = '- bg'
+
+[Bookmarks]
+BookmarkSign = 'sign_change'
+BookmarkAnnotationSign = 'ground_brown'
+BookmarkLine = 'ui2_green'
+BookmarkAnnotationLine = 'ui2_green'
+
+[Bqf]
+BqfPreviewBorder = 'fg'
+BqfPreviewRange = '- ui2_green'
+# BqfPreviewFloat = 'fg'
+# BqfPreviewCursor = ''
+# BqfSign = ''
+
+[Cmp]
+CmpItemAbbrDeprecated = 'gray - s'
+CmpItemAbbrMatch = 'ui3_green'
+CmpItemAbbrMatchFuzzy = 'ui3_green'
+
+CmpItemKindFunction = 'ui_purple'
+CmpItemKindMethod = 'ui_purple'
+CmpItemKindConstructor = 'ui_yellow'
+CmpItemKindClass = 'ui_yellow'
+CmpItemKindEnum = 'ui_yellow'
+CmpItemKindEvent = 'info'
+CmpItemKindInterface = 'ui_yellow'
+CmpItemKindStruct = 'ui_yellow'
+CmpItemKindVariable = 'light_blue'
+CmpItemKindField = 'light_blue'
+CmpItemKindProperty = 'light_blue'
+CmpItemKindEnumMember = 'vivid_blue'
+CmpItemKindConstant = 'vivid_blue'
+CmpItemKindKeyword = 'fg'
+CmpItemKindModule = 'cyan'
+CmpItemKindValue = 'fg'
+CmpItemKindUnit = 'fg'
+CmpItemKindText = 'fg'
+CmpItemKindSnippet = 'fg'
+CmpItemKindFile = 'fg'
+CmpItemKindFolder = 'fg'
+CmpItemKindColor = 'fg'
+CmpItemKindReference = 'light_blue'
+CmpItemKindOperator = 'fg'
+CmpItemKindTypeParameter = 'light_blue'
+
+[Navic]
+NavicIconsFile = 'link:CmpItemKindFile'
+NavicIconsModule = 'link:CmpItemKindModule'
+NavicIconsNamespace = 'link:CmpItemKindModule'
+NavicIconsPackage = 'link:CmpItemKindModule'
+NavicIconsClass = 'link:CmpItemKindClass'
+NavicIconsMethod = 'link:CmpItemKindMethod'
+NavicIconsProperty = 'link:CmpItemKindProperty'
+NavicIconsField = 'link:CmpItemKindField'
+NavicIconsConstructor = 'link:CmpItemKindConstructor'
+NavicIconsEnum = 'link:CmpItemKindEnum'
+NavicIconsInterface = 'link:CmpItemKindInterface'
+NavicIconsFunction = 'link:CmpItemKindFunction'
+NavicIconsVariable = 'link:CmpItemKindVariable'
+NavicIconsConstant = 'link:CmpItemKindConstant'
+NavicIconsString = 'link:String'
+NavicIconsNumber = 'link:Number'
+NavicIconsBoolean = 'link:Boolean'
+NavicIconsArray = 'link:CmpItemKindClass'
+NavicIconsObject = 'link:CmpItemKindClass'
+NavicIconsKey = 'link:CmpItemKindKeyword'
+NavicIconsKeyword = 'link:CmpItemKindKeyword'
+NavicIconsNull = 'blue'
+NavicIconsEnumMember = 'link:CmpItemKindEnumMember'
+NavicIconsStruct = 'link:CmpItemKindStruct'
+NavicIconsEvent = 'link:CmpItemKindEvent'
+NavicIconsOperator = 'link:CmpItemKindOperator'
+NavicIconsTypeParameter = 'link:CmpItemKindTypeParameter'
+NavicText = 'gray'
+NavicSeparator = 'context'
+
+[Packer]
+packerString = 'ui_yellow'
+packerHash = 'ui4_green'
+packerOutput = 'ui_purple'
+packerRelDate = 'gray'
+packerSuccess = 'success_green'
+packerStatusSuccess = 'ui4_green'
+
+[SymbolOutline]
+SymbolsOutlineConnector = 'gray'
+FocusedSymbol = '- #36383F'
+
+[Notify]
+NotifyERRORBorder = '#8A1F1F'
+NotifyWARNBorder = '#79491D'
+NotifyINFOBorder = 'ui_green'
+NotifyDEBUGBorder = 'gray'
+NotifyTRACEBorder = '#4F3552'
+NotifyERRORIcon = 'error'
+NotifyWARNIcon = 'warn'
+NotifyINFOIcon = 'ui4_green'
+NotifyDEBUGIcon = 'gray'
+NotifyTRACEIcon = 'ui_purple'
+NotifyERRORTitle = 'error'
+NotifyWARNTitle = 'warn'
+NotifyINFOTitle = 'ui4_green'
+NotifyDEBUGTitle = 'gray'
+NotifyTRACETitle = 'ui_purple'
+# NotifyERRORBody = Normal
+# NotifyWARNBody = Normal
+# NotifyINFOBody = Normal
+# NotifyDEBUGBody = Normal
+# NotifyTRACEBody = Normal
+
+[TreesitterContext]
+TreesitterContext = '- alt_bg'
+
+[Hop]
+HopNextKey = '#4ae0ff'
+HopNextKey1 = '#d44eed'
+HopNextKey2 = '#b42ecd'
+HopUnmatched = 'gray'
+HopPreview = '#c7ba7d'
+# HopCursor = ''
+
+[Crates]
+CratesNvimLoading = 'hint'
+CratesNvimVersion = 'hint'
+# CratesNvimPreRelease =
+# CratesNvimYanked =
+# CratesNvimNoMatch =
+# CratesNvimUpgrade =
+# CratesNvimError =
+# CratesNvimPopupPillText =
+# CratesNvimPopupPillBorder =
+# CratesNvimPopupDescription =
+# CratesNvimPopupLabel =
+# CratesNvimPopupVersion =
+# CratesNvimPopupPreRelease =
+# CratesNvimPopupYanked =
+# CratesNvimPopupVersionDate =
+# CratesNvimPopupFeature =
+# CratesNvimPopupEnabled =
+# CratesNvimPopupTransitive =
+# CratesNvimPopupDependency =
+# CratesNvimPopupOptional =
+# CratesNvimPopupDependencyVersion =
+# CratesNvimPopupLoading =
+
+[Misc]
+diffAdded = 'sign_add'
+diffRemoved = 'sign_delete'
+diffFileId = 'blue - br'
+diffFile = 'alt_bg'
+diffNewFile = 'green'
+diffOldFile = 'red'
+debugPc = '- ui5_green'
+debugBreakpoint = 'red - r'
+
+CodiVirtualText = 'hint'
+SniprunVirtualTextOk = 'hint'
+SniprunFloatingWinOk = 'hint'
+SniprunVirtualTextErr = 'error'
+SniprunFloatingWinErr = 'error'
+
+DapBreakpoint = 'error'
+
+[Language]
+## XML
+xmlTag = 'cyan'
+xmlTagName = 'cyan'
+
+## YAML
+xmlEndTag = 'cyan'
+yamlPlainScalar = 'rock_brown'
+yamlTSField = 'blue'
+
+## lua
+luaFunc = 'ground_brown'
+luaFunction = 'blue'
+
+## hcl
+hclTSPunctSpecial = 'alt_fg'
+
+## html
+htmlH1 = 'fg'
+htmlH2 = 'fg'
+htmlH3 = 'fg'
+htmlH4 = 'fg'
+htmlH5 = 'fg'
+htmlH6 = 'fg'
+htmlHead = 'fg'
+htmlTitle = 'fg'
+htmlArg = 'fg'
+htmlTag = 'blue'
+htmlTagN = 'blue'
+htmlTagName = 'blue'
+htmlComment = 'green'
+htmlLink = 'rock_brown - u'
+
+## css
+cssBraces = 'fg'
+cssInclude = 'purple'
+cssTagName = 'ground_brown'
+cssClassName = 'ground_brown'
+cssPseudoClass = 'ground_brown'
+cssPseudoClassId = 'ground_brown'
+cssPseudoClassLang = 'ground_brown'
+cssIdentifier = 'ground_brown'
+cssProp = 'fg'
+cssDefinition = 'fg'
+cssAttr = 'rock_brown'
+cssAttrRegion = 'rock_brown'
+cssColor = 'rock_brown'
+cssFunction = 'purple'
+cssFunctionName = 'ground_brown'
+cssVendor = 'rock_brown'
+cssValueNumber = 'rock_brown'
+cssValueLength = 'rock_brown'
+cssUnitDecorators = 'rock_brown'
+cssStyle = 'fg'
+cssImportant = 'blue'
+
+## json
+jsonKeyword = 'blue'
+
+## yaml
+yamlBlockMappingKey = 'blue'
+
+## yaml
+tomlTSProperty = 'blue'
