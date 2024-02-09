@@ -62,13 +62,13 @@ success_green = '#939d76'
 folder_blue = '#90b8d8'
 
 
-ui_green = '#777f63' # 176 189 145
-ui2_green = '#939c76' # 147 156 118
-ui3_green = '#b0bd91' # 119 127 99
-ui4_green = '#c9d2ad' # 201 210 173
-ui5_green = '#909974' # 144 153 116
-ui_yellow = '#cec285' # 206 194 133
-ui2_yellow = '#b4a14b' # 180 161 75
+ui_green = '#c9d2ad'
+ui2_green = '#939c76'
+ui3_green = '#b0bd91'
+ui4_green = '#777f63'
+ui5_green = '#909974'
+ui_yellow = '#cec285'
+ui2_yellow = '#b4a14b'
 ui_purple = '#615adf' 
 
 [Editor]
@@ -96,7 +96,7 @@ CursorLine = '- alt_bg'
 CursorColumn = '- alt_bg'
 ColorColumn = '- alt_bg'
 NormalFloat = '- alt_bg'
-Visual = 'bg fg'
+Visual = '- ui_green'
 VisualNOS = 'alt_fg alt_bg'
 WarningMsg = 'error bg'
 DiffText = 'alt_bg sign_delete'
