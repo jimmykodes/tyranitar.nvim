@@ -8,7 +8,6 @@ author = 'Jimmy Keith <james.keith.92@gmail.com>'
 line = '#3e3e3e'
 context = '#606060'
 menu_bg = '#202123'
-vivid_blue = '#7c9ebb'
 
 fg = '#cad4ae'
 bg = '#1f1e1c'
@@ -27,6 +26,7 @@ red = '#a53949'
 light_red = '#bc7871'
 
 blue = '#7c9ebb'
+vivid_blue = '#2574ba'
 light_blue = '#90b8d8'
 
 green = '#939d76'
